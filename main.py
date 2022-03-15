@@ -5,7 +5,8 @@ import os
 def add_values_in_dict(sample_dict, key, list_of_values):
     if key not in sample_dict:
         sample_dict[key] = list()
-    sample_dict[key].append(list_of_values)
+    for item in list_of_values:
+        sample_dict[key].append(item)
     return sample_dict
 
 
